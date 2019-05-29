@@ -1,3 +1,7 @@
+---
+title: Table Storage and Azure Functions
+layout: post
+---
 
 ### Write to Azure Table Storage using Azure Functions' Output Bindings and Powershell
 
