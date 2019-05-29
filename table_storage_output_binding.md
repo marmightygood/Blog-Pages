@@ -59,7 +59,7 @@ while($val -ne 10)
      }
 ```
 
-Associate your array with the output binding (note thevalue of the parameter at -Name must match the "Table parameter name" from the **Add the output binding** section above:
+Associate your array with the output binding. The value of the parameter at **-Name** must match the **Table parameter name** from the **Add the output binding** section above:
 ```powershell
 Push-OutputBinding -Name outTable -Value $outputArray
 ```
