@@ -1,9 +1,21 @@
 
 ### Write to Azure Table Storage using Azure Functions' Output Bindings and Powershell
 
-## Create a new Azure Function App or Powershell
+## Create a new Azure Function App for Powershell
+Add a new Function App, specifying the "Powershell (Preview)" Runtime Stack.
+![New Function App](images/newfunctionapp.png)
 
 ## Create a function
+There are a few steps to create a new function, here's the abridged version.
+
+Push the "+" button next to the "Functions" section of your new Function App, and then select "HTTP Trigger" as the trigger type:
+![New Function App](images/newfunction1.png)
+
+Choose a name for the function:
+![New Function App](images/newfunction2.png)
+
+The sample code should now appear:
+![New Function App](images/newfunction2.png)
 
 ## Add the output binding
 
