@@ -20,6 +20,14 @@ The sample code should now appear:
 
 ## Add the output binding
 
+From the Function App screen, select "Integrate". this will display the screen where Output Bindings are configured. Select "New Output" and then "Azure Table Storage", then click the "Select" button.
+![New Function App](images/outputbinding1.png)
+
+The Azure Table Storage output configuration should now appear. If you haven't installed the Microsoft.Azure.WebJobs.Extensions.Storage extension, click Install, then wait the two minutes or so that it takes to install (it looks like you can continue at this point, but I would recommend waiting for the install to complete before leaving the screen).
+
+Most of the other settings can stay as they are, unless you want to create the Table Storage table in a specific account, in which case follow the steps to change the storage account:
+![New Function App](images/outputbinding2.png)
+
 ## Write some code
 
 Create an array (this array will be sent to Table Storage):
@@ -45,7 +53,7 @@ while($val -ne 10)
      }
 ```
 
-Associate your array with the output binding:
+Associate your array with the output binding (note thevalue of the parameter at -Name must match the "Table parameter name" from the **Add the output binding** section above:
 ```powershell
-Push-OutputBinding -Name outputTable -Value $outputArray
+Push-OutputBinding -Name outTable -Value $outputArray
 ```
