@@ -35,7 +35,7 @@ Create an array (this array will be sent to Table Storage):
 $outputArray = @()
 ```
 
-Using a dictionary to represent each row, add some records to the array. Each row should include the indexes "RowKey" and "PartitionKey". The Partition Key represents the partition in Table Storage where the row will be stored. The RowKey must be a unique value identifying each row within a partition:
+Using a dictionary to represent each row, add some records to the output array. Each row should include the indexes "RowKey" and "PartitionKey". The Partition Key represents the partition in Table Storage where the row will be stored. The RowKey must be a unique value identifying each row within a partition:
 ```powershell
 while($val -ne 10)
      {
