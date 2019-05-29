@@ -1,6 +1,7 @@
 
 ### Write to Azure Table Storage using Azure Functions' Output Bindings and Powershell
 
+
 ## Create a new Azure Function App for Powershell
 
 Add a new Function App, specifying the "Powershell (Preview)" Runtime Stack:
