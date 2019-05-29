@@ -1,6 +1,7 @@
 
 ### Write to Azure Table Storage using Azure Functions' Output Bindings and Powershell
 
+Azure Functions's output bindings allow you to write an object directly to table storage for analysis, long term storage etc. Since the Powershell runtime stack is still in preview, there isn't much documentation around on how to configure it.
 
 ## Create a new Azure Function App for Powershell
 
@@ -17,11 +18,11 @@ Choose a name for the function:
 ![New Function App](images/newfunction2.png)
 
 The sample code should now appear:
-![New Function App](images/newfunction2.png)
+![New Function App](images/newfunction3.png)
 
 ## Add the output binding
 
-From the Function App screen, select "Integrate". this will display the screen where Output Bindings are configured. Select "New Output" and then "Azure Table Storage", then click the "Select" button.
+From the Function App screen, select "Integrate". This will display the screen where Output Bindings are configured. Select "New Output" and then "Azure Table Storage", then click the "Select" button.
 ![New Function App](images/outputbinding1.png)
 
 The Azure Table Storage output configuration should now appear. If you haven't installed the Microsoft.Azure.WebJobs.Extensions.Storage extension, click Install, then wait the two minutes or so that it takes to install (it looks like you can continue at this point, but I would recommend waiting for the install to complete before leaving the screen).
@@ -58,3 +59,6 @@ Associate your array with the output binding (note thevalue of the parameter at 
 ```powershell
 Push-OutputBinding -Name outTable -Value $outputArray
 ```
+## More reading
+[Microsoft's documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table) on Azure Functions and Output Bindings (useful for all other runtime languages)
+[Another blog post](https://blog.kloud.com.au/2019/04/17/leveraging-the-azure-functions-table-storage-output-binding-with-powershell/) on the same subject, although this technique is somewhat more complicated, and I couldn't get it to work as written. 
