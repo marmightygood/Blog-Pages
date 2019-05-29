@@ -1,5 +1,3 @@
-
-
 ### Write to Azure Table Storage using Azure Functions' Output Bindings and Powershell
 
 Table Storage is a cheap storage solution on Azure that can be used any time you need to store tabular data, but don't want the cost or complexity of an actual database.
