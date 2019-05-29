@@ -62,5 +62,5 @@ Associate your array with the output binding (note thevalue of the parameter at 
 Push-OutputBinding -Name outTable -Value $outputArray
 ```
 ## More reading
-[Microsoft's documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table) on Azure Functions and Output Bindings (useful for all other runtime languages)
-[Another blog post](https://blog.kloud.com.au/2019/04/17/leveraging-the-azure-functions-table-storage-output-binding-with-powershell/) on the same subject, although this technique is somewhat more complicated, and I couldn't get it to work as written. 
+* [Microsoft's documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table) on Azure Functions and Output Bindings (useful for all other runtime languages)
+* [Another blog post](https://blog.kloud.com.au/2019/04/17/leveraging-the-azure-functions-table-storage-output-binding-with-powershell/) on the same subject, although this technique is somewhat more complicated, and I couldn't get it to work as written. 
