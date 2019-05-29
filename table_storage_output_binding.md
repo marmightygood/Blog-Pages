@@ -24,12 +24,14 @@ while($val -ne 10)
        ##This value must be unique within each partition. If it is not, the existing row will be overwritten!
        $outputRow["RowKey"] = $val
        
+       ##Add the row to the output array
+       $outputArray += $outputRow
+       
        $val++
      }
 ```
 
 Associate your array with the output binding
 ```powershell
-# Associate values to output bindings by calling 'Push-OutputBinding'.
 Push-OutputBinding -Name outputTable -Value $outputArray
 ```
