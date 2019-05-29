@@ -1,7 +1,9 @@
 
 ### Write to Azure Table Storage using Azure Functions' Output Bindings and Powershell
 
-Azure Functions' Output Bindings allow you to write an object or list of objcts to table storage for analysis, long term storage etc. Since the Powershell runtime stack is still in preview, there isn't much documentation around on how to configure it.
+Table Storage is a cheap storage solution on Azure that can be used any time you need to store tabular data, but don't want the cost or complexity of an actual database.
+
+Azure Functions' Output Bindings allow you to write an object or list of objcts to table storage for analysis, long term storage etc. Since the Powershell runtime stack for Azure Functions is still in preview, there isn't much documentation around on how to configure it.
 
 I personally wanted to get Pipeline Run information out of Data Factory v2 and store it in Table Storage, which works well using this technique.
 
